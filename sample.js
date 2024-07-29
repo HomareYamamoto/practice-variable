@@ -1,9 +1,13 @@
-var str = "webcamp"
+// メイン部分
+let alertString;
 
-function foo() {
-  console.log(str)
-  var str = "dmm webcamp"
-  console.log(str)
+// 作成した関数を呼び出し、変数へ格納
+alertString = addString("WebCamp");
+
+//変数の中身をアラートで表示する
+alert(alertString);
+
+function addString(strA){
+  let addStr = "Hello " + strA;
+  return addStr;
 }
-
-foo()
